@@ -1,0 +1,68 @@
+
+:root{
+    /*Colores de fondo*/
+    --clr-fonmain: #0B0B0B;
+    --clr-fontarj: #1A1A1A;
+    --clr-fonbord: #262626;
+    /*Colores de identidad*/
+    --clr-idemain:#D20A0A;
+    --clr-idesec: #FFD700;
+    /*Tipografia*/
+    --clr-titulos: #FFFFFF;
+    --clr-cuerpo: #E0E0E0;
+    --clr-footer: #A0A0A0;
+    --font-main: 'Oswald', sans-serif;
+}
+
+body{
+    background-color: var(--clr-fonmain);
+    color: var(--clr-cuerpo);
+    font-family: var(--font-main);
+    padding-top: 2rem;
+    
+}
+header{
+    background-color: var(--clr-fonmain);
+    
+}
+.main-nav{
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.9);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-left: 5rem;
+}
+.main-nav img{
+    width: 10%;
+}
+.branding ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    list-style: none;
+    margin-right: 5rem;
+    
+}
+.branding ul li a{
+    color: var(--clr-cuerpo);
+    text-decoration: none;
+    transition: all 0.9s ease;
+}
+.branding ul li a:hover{
+    color: var(--clr-cuerpo);
+    text-decoration: none;
+    color: var(--clr-idesec);
+}
+
