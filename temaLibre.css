@@ -11,15 +11,17 @@
     --clr-titulos: #FFFFFF;
     --clr-cuerpo: #E0E0E0;
     --clr-footer: #A0A0A0;
-    --font-main: 'Oswald', sans-serif;
+    --font-main: 'Arial Black', 'Arial Bold', Gadget, sans-serif;
 }
-
+html{
+    scroll-padding-top: 70px;
+    scroll-behavior: smooth;
+}
 body{
     background-color: var(--clr-fonmain);
     color: var(--clr-cuerpo);
     font-family: var(--font-main);
     padding-top: 2rem;
-    
 }
 header{
     background-color: var(--clr-fonmain);
@@ -65,4 +67,42 @@ header{
     text-decoration: none;
     color: var(--clr-idesec);
 }
-
+.hero-section{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(src/hero-tl.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.hero-section h1{
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 900;
+    text-shadow: 
+        0 0 20px  rgba(165, 10, 10, 0.8), 
+        0 0 10px rgba(165, 10, 10, 0.6), 
+        0 0 10px rgba(165, 10, 10, 0.4);
+    margin: 0;
+    line-height: 1.1;
+}
+.hero-section h2{
+    text-align: center;
+    margin: 0;
+    color: rgb(255, 31, 31);
+     text-shadow: 
+        0 0 1px  var(--clr-idemain), 
+        0 0 1px var(--clr-idemain), 
+        0 0 10px var(--clr-idemain);
+    font-size: 4rem;
+}
+.hero-section p{
+    color: var(--clr-footer);
+    border-bottom: 2px solid var(--clr-idemain);
+    padding-bottom: 3rem;
+    margin-bottom: 3rem;
+}
