@@ -9,7 +9,7 @@
     --clr-idesec: #FFD700;
     /*Tipografia*/
     --clr-titulos: #FFFFFF;
-    --clr-cuerpo: #E0E0E0;
+    --clr-cuerpo: #b3b1b1;
     --clr-footer: #A0A0A0;
     --font-main: 'Arial Black', 'Arial Bold', Gadget, sans-serif;
 }
@@ -26,6 +26,15 @@ body{
 header{
     background-color: var(--clr-fonmain);
     
+}
+h1{
+    color: var(--clr-titulos);
+}
+h2{
+    color: var(--clr-titulos);
+}
+h3{
+    color: var(--clr-titulos);
 }
 .main-nav{
     display: flex;
@@ -105,4 +114,42 @@ header{
     border-bottom: 2px solid var(--clr-idemain);
     padding-bottom: 3rem;
     margin-bottom: 3rem;
+}
+.intro-section{
+    display: flex;
+    justify-content: space-between;
+    margin: 6rem;
+    gap: 4rem;
+    align-items: center;
+}
+.intro-section h2{
+    text-transform: uppercase;
+    font-size: 2.5rem;
+}
+.red-color{
+    color: var(--clr-idemain);
+    letter-spacing: 5px;
+}
+.que{
+   flex: 1;
+   max-width: 500px;
+}
+.problem-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px;
+    flex: 1;
+}
+
+.card{
+    background-color: var(--clr-fontarj);
+    border: 1px solid var(--clr-fonbord);
+    padding: 10px;
+    padding-top: 0;
+}
+.card h3{
+    font-size: 2rem;
+}
+#largo{
+    grid-column: span 2;
 }
