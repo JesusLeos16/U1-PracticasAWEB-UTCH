@@ -215,10 +215,10 @@ h3 {
   border-bottom: 1px solid var(--clr-fonbord);
   padding-bottom: 30px;
 }
-.testimonios h2{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.testimonios h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .img-cont img {
   width: 150px;
@@ -256,4 +256,15 @@ h3 {
     flex-direction: column;
     text-align: center;
   }
+}
+
+.proto-section {
+  display: flex;
+  gap: 7rem;
+  align-items: center;
+  justify-content: center;
+}
+.proto-section div img{
+    width: 600px;
+    margin-left: 6rem;
 }
