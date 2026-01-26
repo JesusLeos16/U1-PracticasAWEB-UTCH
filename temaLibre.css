@@ -68,6 +68,10 @@ h3 {
   gap: 1rem;
   margin-left: 5rem;
 }
+.logo a{
+    color: var(--clr-titulos);
+    text-decoration: none;
+}
 .main-nav img {
   width: 10%;
 }
@@ -267,4 +271,94 @@ h3 {
 .proto-section div img{
     width: 600px;
     margin-left: 6rem;
+}
+footer {
+    background-color: #050505;
+    color: white;
+    padding-top: 5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+footer section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem 4rem 2rem;
+    align-items: start;
+}
+
+.footer-info h2 {
+    color: white;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-info h3 {
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 800;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.footer-info p {
+    color: #777;
+    line-height: 1.8;
+    margin: 0 0 10px 0;
+    font-weight: 500;
+    font-size: 0.85rem;
+}
+
+.footer-info h4 {
+    color: #ccc;
+    font-weight: normal;
+    font-style: italic;
+    margin: 0;
+    font-size: 0.9rem;
+    cursor: pointer;
+    border-bottom: 1px solid #333;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.footer-info h4:hover {
+    color: white;
+    border-color: #d20a0a;
+}
+
+footer > p {
+    border-top: 1px solid #1a1a1a;
+    background-color: #050505;
+    color: #444;
+    text-align: left;
+    padding: 2rem;
+    margin: 0 auto;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+@media (max-width: 900px) {
+    footer section {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    
+    footer > p {
+        text-align: center;
+    }
 }
